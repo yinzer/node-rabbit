@@ -1,0 +1,20 @@
+{
+  "name": "node-rabbit",
+  "version": "0.0.1",
+  "description": "node with rabbitmq",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqp": "^0.2.0",
+    "amqplib": "^0.3.0",
+    "body-parser": "^1.10.1",
+    "express": "^4.11.0",
+    "morgan": "^1.5.1",
+    "node-uuid": "^1.4.2",
+    "when": "^3.6.4"
+  }
+}
