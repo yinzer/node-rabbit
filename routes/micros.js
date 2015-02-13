@@ -17,7 +17,7 @@ module.exports = (function () {
   router.get('/transaction', function (req, res) {
     // var transaction = 'Transaction: ' + Math.floor(Math.random() * 100000) + 1;
     
-    amqp.connect('amqp://guest:guest@rabbit:5673').then(function(conn) {
+    amqp.connect('amqp://guest:guest@rabbit:5672').then(function(conn) {
       return when(conn.createChannel().then(function(ch) {
         var q = 'micros_transaction';
         var ok = ch.assertQueue(q, {durable: false});
